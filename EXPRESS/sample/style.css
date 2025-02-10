@@ -1,0 +1,88 @@
+body
+        {
+            box-sizing: border-box;
+            margin: 20%;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            
+        }
+        #container
+        {   width: 90%;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            padding: 5px;
+            border-radius: 10px;
+            min-height: 200px;
+            max-height: 200px;
+            /* justify-items: start; */
+        }
+        #inputContainer{
+            display: flex;
+            justify-content: space-evenly;
+            padding: auto;        
+        }
+        /* #myElement{
+            
+            
+        } */
+        #submit:hover{
+            cursor:pointer;
+            background-color: green;
+            color: white;
+        }
+        #inputText{
+            width: 50%;
+            border: 1px solid black;
+            border-radius: 2px;
+            /* padding: 5px; */
+        }
+        #listContainer{
+            width: 70%;
+            margin: auto;
+            flex-grow: inherit;
+            margin-top: 5px;
+            /* border: 1px solid black; */
+            border-radius: 2px;
+            overflow: auto;
+        }
+        #list{
+            
+            padding-left: 0px;
+            list-style-type: none;
+            padding-top: 0px;
+            
+
+
+            
+        }
+        .listItem{
+            border: 1px solid black;
+            margin: 3px;
+            border-radius: 3px;
+            
+            
+        }
+        .itemDiv{
+            display: flex;
+            align-items: center;
+            padding: 3px; 
+        }
+        
+        .itemContent{
+            padding-left: 5px;
+            margin:0px;
+
+        }
+        .edit{
+            margin-left:auto;
+        }
+        .remove{
+            padding-left: 10px;
+            margin-left: 5px;
+            
+        }
+        .complete{
+            color: indianred;
+        }
