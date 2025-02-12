@@ -14,10 +14,18 @@ app.get('/api/products',(req,res)=>{
     res.json(newpro)
 })
 
-app.get('/api/products/:id',(req,res)=>{
-    console.log(req.params)
-    const singlepro=products.find((product)=>product.id ===1)
-    res.json(singlepro)
+app.get('/api/products/:id',(req,res)=>{//route parameter
+    // console.log(req.params);
+
+    const {id}=req.params
+    console.log(id)
+    
+    const singlepro=products.find((product)=>product.id ===Number(id))
+    
+    if(!singlepro){
+        return res.status(404).send(`<h1>Product not Found</h1>`)
+    }
+    return res.json(singlepro)
 })
 app.listen(5000,()=>{
     console.log('server is listening in the port number 5000...')
